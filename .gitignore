@@ -30,4 +30,7 @@ coverage
 *.idea/
 *.idea/*
 *.json/
-.env
+
+# local env files
+.env.local
+.env.*.local
