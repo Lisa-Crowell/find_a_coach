@@ -2,9 +2,9 @@ import './assets/main.css'
 
 import { createApp } from 'vue'
 
-import App from './App.vue'
 import router from "./router";
 import store from "./store/index.js";
+import App from './App.vue'
 
 import BaseCard from "@/ui/BaseCard.vue";
 import BaseButton from "@/ui/BaseButton.vue";
