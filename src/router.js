@@ -6,6 +6,7 @@ import CoachRegistration from './pages/coaches/CoachRegistration.vue';
 import ContactCoach from './pages/requests/ContactCoach.vue';
 import RequestReceived from './pages/requests/RequestReceived.vue';
 import NotFound from './pages/NotFound.vue';
+import UserAuthentication from "@/pages/auth/UserAuthentication.vue";
 
 const router = createRouter({
     history: createWebHistory(),
@@ -21,6 +22,7 @@ const router = createRouter({
         }, // /coaches/coachId/contact
         { path: '/register', component: CoachRegistration },
         { path: '/requests', component: RequestReceived },
+        { path: '/auth', component: UserAuthentication},
         { path: '/:notFound(.*)', component: NotFound},
     ],
 });

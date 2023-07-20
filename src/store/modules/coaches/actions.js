@@ -8,7 +8,10 @@ export default {
             description: data.description,
             hourlyRate: data.hourlyRate
         };
-        const response = await fetch(`${process.env.VUE_APP_DATABASE_URL}${this.userId}.json`, {
+
+        const token = context.rootGetters.token;
+
+        const response = await fetch(`${process.env.VUE_APP_DATABASE_URL}${this.userId}.json?auth=` + token, {
             method: 'PUT',
             body: JSON.stringify(coachData)
         });
